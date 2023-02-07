@@ -22,3 +22,14 @@
 | Location | https://github.com/teldrynsero/OOP-cmarcial2/tree/main/helloGit |
 | Self Grade | 100/100 |
 | Notes | Completed all setup steps |
+
+### review
+
+| Name | Value |
+| --- | --- |
+| Description | Python Review |
+| Due Date | 14-Feb-23 |
+| Status | Done |
+| Location | https://github.com/teldrynsero/OOP-cmarcial2/tree/main/review |
+| Self Grade | 100/100 |
+| Notes | Completed all steps |
