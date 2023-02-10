@@ -1,0 +1,4 @@
+@startuml interaction
+title "UML Class Interaction"
+Main "1" - Polygon: manages >
+@enduml
