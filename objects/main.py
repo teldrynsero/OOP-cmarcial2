@@ -24,7 +24,6 @@ class Solution(object):
         Reads data
         return: none
         """
-
         data = sys.stdin.readlines()
         self._n = int(data[0])
         self._data = [str(data[i]) for i in range(1, len(data))]
@@ -44,7 +43,9 @@ class Solution(object):
         #print(self._n)
         #print("res: ")
         #print(res)
-
+        #print(self._answer)
+        #print("self._data: ")
+        #print(self._data)
         self._answer = [str(Polygon(res)) for res in self._data]
         self._answer.append('')
         #print("self._answer: ")

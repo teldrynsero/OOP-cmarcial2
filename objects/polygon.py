@@ -18,6 +18,7 @@ class Polygon(object):
         """
         self.n = n
 
+    @property
     def getN(self) -> str:
         """
         Returns n
@@ -30,6 +31,9 @@ class Polygon(object):
         Solve polygon data for area
         :return: area
         """
+
+        #print("ENTERED POLYGON.PY")
+
         #print("n: ")
         #print(self.n)
 
@@ -43,7 +47,7 @@ class Polygon(object):
         
         newData = data.split() #convert string data into array
 
-        dataInts = [int(i) for i in newData]
+        dataInts = [int(i) for i in newData] #convert into ints
 
         for i in dataInts: #split data into x and y coordinates
             if (counter == 0):
@@ -67,12 +71,19 @@ class Polygon(object):
             area += (x[j] + x[i]) * (y[j] - y[i])
             j = i
 
+        #return area
         return f'{float(abs(area / 2.0)):g}' #:g gets rid of leading 0s
 
     def getSolve(self) -> str:
+        """
+        :return: solve
+        """
         return self.solve()
 
     def __str__(self) -> str:
+        """
+        :return: getSolve
+        """
         return f'{self.getSolve()}'
 
     def _repr_(self) -> str:

@@ -1,0 +1,16 @@
+@startuml
+scale 2
+title Polygon UML
+
+class Polygon
+{
+    .. special method ..
+    - __init__(): None
+
+    .. private members ..
+    - _n: str
+
+    .. instance methods ..
+    + n: str
+}
+@enduml
