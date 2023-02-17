@@ -33,3 +33,14 @@
 | Location | https://github.com/teldrynsero/OOP-cmarcial2/tree/main/review |
 | Self Grade | 100/100 |
 | Notes | Completed all steps |
+
+### objects
+
+| Name | Value |
+| --- | --- |
+| Description | Object-Oriented Design |
+| Due Date | 21-Feb-23 |
+| Status | Done |
+| Location | https://github.com/teldrynsero/OOP-cmarcial2/tree/main/objects |
+| Self Grade | 100/100 |
+| Notes | Completed all requirements |

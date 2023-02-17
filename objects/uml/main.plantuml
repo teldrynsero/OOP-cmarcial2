@@ -2,15 +2,16 @@
 scale 1
 title  "UML Class Diagram"
 class Main {
-	.. Class Variables ..
-	_instance: Main
 	.. Instance Variables ..
-	- _answer: list
+	- _n: int 
+	- _data: List
+	- _answer: List
 	.. Instance Methods ..
+	+ readData(): None
+	+ findAnswer(): None
+	+ getAnswer(): List
+	+ getN(): int
+	+ getData(): List
 	+ solve(): None
-	.. Class Methods ..
-	+ get_instance(): Main
-	.. Static Methods ..
-	+ main(): None
 }
 @enduml

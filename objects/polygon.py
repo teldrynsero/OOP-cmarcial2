@@ -18,7 +18,6 @@ class Polygon(object):
         """
         self.n = n
 
-    @property
     def getN(self) -> str:
         """
         Returns n
@@ -31,9 +30,7 @@ class Polygon(object):
         Solve polygon data for area
         :return: area
         """
-
-        #print("ENTERED POLYGON.PY")
-
+        
         #print("n: ")
         #print(self.n)
 
@@ -76,15 +73,21 @@ class Polygon(object):
 
     def getSolve(self) -> str:
         """
+        return solve
         :return: solve
         """
         return self.solve()
 
     def __str__(self) -> str:
         """
-        :return: getSolve
+        returns string rep of object
+        :return: string rep of object
         """
         return f'{self.getSolve()}'
 
     def _repr_(self) -> str:
+        """
+        Returns string rep of object
+        :return: string rep of object
+        """
         return self.__str__()

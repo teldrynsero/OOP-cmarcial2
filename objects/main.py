@@ -52,12 +52,16 @@ class Solution(object):
         #print(self._answer)
 
     def getAnswer(self) -> List[str]:
+        """
+        Return answer
+        :return: answer
+        """
         return self._answer
 
     def getN(self) -> int:
         """
         Returns the number of polygons
-        :return: number of polygons
+        :return: int
         """
         return self._n
 

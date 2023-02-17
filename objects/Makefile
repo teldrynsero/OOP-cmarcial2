@@ -3,7 +3,7 @@ all: mypy_test run
 
 run:
 	@cat data/sample.in | python main.py | diff - data/sample.ans || true
-	@echo "Program worked on sample data!" 
+	@echo "Program worked on sample data" 
 
 mypy_test:
 		mypy polygon.py

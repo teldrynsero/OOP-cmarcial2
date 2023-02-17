@@ -1,16 +1,14 @@
-@startuml
+@startuml polygon
 scale 2
-title Polygon UML
-
+title "UML Class Diagram"
 class Polygon
 {
-    .. special method ..
-    - __init__(): None
-
-    .. private members ..
-    - _n: str
-
-    .. instance methods ..
     + n: str
+    + setN: None
+    + getN: str
+    + solve: str
+    + getSolve: str
+    -_str: str
+    -_repr: str
 }
 @enduml
