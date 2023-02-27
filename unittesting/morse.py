@@ -1,15 +1,12 @@
 __author__ = "Christina Marcial"
 
-from typing import Any
+from typing import overload
 
 class Morse(object):
-	"""_summary_
-
-	Args:
-		object (_type_): _description_
+	"""Class for finding morse code translation
 	"""
 	def __init__(self, word: str) -> None:
-		"""_summary_
+		"""
 
 		Args:
 			word (str): given word
@@ -17,21 +14,21 @@ class Morse(object):
 		self.word = word
 
 	def set_word(self, word: str) -> None:
-		"""_summary_
+		"""Set world
 
 		Args:
-			word (str): _description_
+			word (str): word in ASCII
 		"""
 		self.word = word
 
 	def get_word(self) -> str:
-		"""_summary_
+		"""Get word
 
 		Returns:
-			str: _description_
+			str: word
 		"""
 		return self.word
-
+	
 	def solve(self) -> int:
 		"""Returns whether the word is a
 		palindrome in morse code or not
@@ -46,175 +43,167 @@ class Morse(object):
 		word = self.word
 		word = word.lower()
 		#print(word)
-		word = list(word)
-		for i in word[:]:
-			#print("i: ")
-			#print(i)
+		wordArray = list(word)
+		for i in wordArray[:]:
 			if (i.isalpha() == True):
-				#print("is alpha!")
 				pass
 			elif (i.isdigit() == True):
-				#print("is digit!")
 				pass
 			else:
-				#print("remove!")
-				word.remove(i)
+				wordArray.remove(i)
 
 		#print(word)
+		length = len(wordArray)
 
-		for i in range(len(word)):
-			if word[i] == 'a':
-				word[i] = '._'
+		for x in range(length):
+			string = wordArray[int(x)]
+			if string == 'a':
+				wordArray[int(x)] = '._'
 
-			elif word[i] == 'b':
-				word[i] = '_...'
+			elif string == 'b':
+				wordArray[int(x)] = '_...'
 
-			elif word[i] == 'c':
-				word[i] = '_._.'
+			elif string == 'c':
+				wordArray[int(x)] = '_._.'
 
-			elif word[i] == 'd':
-				word[i] = '_..'
+			elif string == 'd':
+				wordArray[int(x)] = '_..'
 
-			elif word[i] == 'e':
-				word[i] = '.'
+			elif string == 'e':
+				wordArray[int(x)] = '.'
 			
-			elif word[i] == 'f':
-				word[i] = '.._.'
+			elif string == 'f':
+				wordArray[int(x)] = '.._.'
 
-			elif word[i] == 'g':
-				word[i] = '__.'
+			elif string == 'g':
+				wordArray[int(x)] = '__.'
 
-			elif word[i] == 'h':
-				word[i] = '....'
+			elif string == 'h':
+				wordArray[int(x)] = '....'
 
-			elif word[i] == 'i':
-				word[i] = '..'
+			elif string == 'i':
+				wordArray[int(x)] = '..'
 
-			elif word[i] == 'j':
-				word[i] = '.___'
+			elif string == 'j':
+				wordArray[int(x)] = '.___'
 
-			elif word[i] == 'k':
-				word[i] = '_._'
+			elif string == 'k':
+				wordArray[int(x)] = '_._'
 
-			elif word[i] == 'l':
-				word[i] = '._..'
+			elif string == 'l':
+				wordArray[int(x)] = '._..'
 
-			elif word[i] == 'm':
-				word[i] = '__'
+			elif string == 'm':
+				wordArray[int(x)] = '__'
 
-			elif word[i] == 'n':
-				word[i] = '_.'
+			elif string == 'n':
+				wordArray[int(x)] = '_.'
 
-			elif word[i] == 'o':
-				word[i] = '___'
+			elif string == 'o':
+				wordArray[int(x)] = '___'
 
-			elif word[i] == 'p':
-				word[i] = '.__.'
+			elif string == 'p':
+				wordArray[int(x)] = '.__.'
 
-			elif word[i] == 'q':
-				word[i] = '__._'
+			elif string == 'q':
+				wordArray[int(x)] = '__._'
 
-			elif word[i] == 'r':
-				word[i] = '._.'
+			elif string == 'r':
+				wordArray[int(x)] = '._.'
 
-			elif word[i] == 's':
-				word[i] = '...'
+			elif string == 's':
+				wordArray[int(x)] = '...'
 
-			elif word[i] == 't':
-				word[i] = '_'
+			elif string == 't':
+				wordArray[int(x)] = '_'
 
-			elif word[i] == 'u':
-				word[i] = '.._'
+			elif string == 'u':
+				wordArray[int(x)] = '.._'
 
-			elif word[i] == 'v':
-				word[i] = '..._'
+			elif string == 'v':
+				wordArray[int(x)] = '..._'
 
-			elif word[i] == 'w':
-				word[i] = '.__'
+			elif string == 'w':
+				wordArray[int(x)] = '.__'
 
-			elif word[i] == 'x':
-				word[i] = '_.._'
+			elif string == 'x':
+				wordArray[int(x)] = '_.._'
 
-			elif word[i] == 'y':
-				word[i] = '_.__'
+			elif string == 'y':
+				wordArray[int(x)] = '_.__'
 
-			elif word[i] == 'z':
-				word[i] = '__..'
+			elif string == 'z':
+				wordArray[int(x)] = '__..'
 
-			elif word[i] == '0':
-				word[i] = '_____'
+			elif string == '0':
+				wordArray[int(x)] = '_____'
 
-			elif word[i] == '1':
-				word[i] = '.____'
+			elif string == '1':
+				wordArray[int(x)] = '.____'
 
-			elif word[i] == '2':
-				word[i] = '..___'
+			elif string == '2':
+				wordArray[int(x)] = '..___'
 
-			elif word[i] == '3':
-				word[i] = '...__'
+			elif string == '3':
+				wordArray[int(x)] = '...__'
 
-			elif word[i] == '4':
-				word[i] = '...._'
+			elif string == '4':
+				wordArray[int(x)] = '...._'
 
-			elif word[i] == '5':
-				word[i] = '.....'
+			elif string == '5':
+				wordArray[int(x)] = '.....'
 
-			elif word[i] == '6':
-				word[i] = '_....'
+			elif string == '6':
+				wordArray[int(x)] = '_....'
 
-			elif word[i] == '7':
-				word[i] = '__...'
+			elif string == '7':
+				wordArray[int(x)] = '__...'
 
-			elif word[i] == '8':
-				word[i] = '___..'
+			elif string == '8':
+				wordArray[int(x)] = '___..'
 
-			elif word[i] == '9':
-				word[i] = '____.'
-
-			#else:
-			#	word[i] = 'xxxxxx'
+			elif string == '9':
+				wordArray[int(x)] = '____.'
 
 		#print(word)
-		#for i in word:
-		#    word[i].split
 		code = ""
-		code = code.join(word)
-		code = list(code)
+		code = code.join(wordArray)
+		codeList = list(code)
 		#print(code)
 
-		newCode="".join([str(i) for i in code])
+		newCode="".join([str(i) for i in codeList])
 		#print(newCode)
 
 		txt = newCode[::-1]
 		#print(txt)
 
 		if newCode == "":
-			return f'0'
+			return 0
 		elif newCode == txt:
-			return f'1'
+			return 1
 		else:
-			return f'0'
-		
+			return 0
+
 	def get_solve(self) -> int:
-		"""_summary_
+		"""Get solution
 
 		Returns:
-			str: _description_
+			str: solution
 		"""
 		return self.solve()
 	
 	def __str__(self) -> str:
-		"""_summary_
+		"""String rep of answer
 
 		Returns:
-			str: _description_
+			str: solution as string
 		"""
 		return f'{self.get_solve()}'
 
 	def _repr_(self) -> str:
-		"""_summary_
+		"""Return string rep
 
 		Returns:
-			str: _description_
+			str: string rep
 		"""
 		return self.__str__()

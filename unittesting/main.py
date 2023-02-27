@@ -15,7 +15,7 @@ class Solution(object):
 		solution to problem
 		"""
 		self._word: str = '' # the given input string
-		self._answer: int = 0 # answer?
+		self._answer: str = '' # answer?
 		self.read_word(source)
 		self.find_answer()
 
@@ -33,24 +33,24 @@ class Solution(object):
 		self.find_answer()
 
 	def find_answer(self) -> None:
-		"""_summary_
+		"""finds answer by calling function
 
 		Returns:
-			_type_: _description_
+			None
 		"""
 
 		self._answer = str(Morse(self._word))
 
-	def get_answer(self) -> int:
-		"""_summary_
+	def get_answer(self) -> str:
+		"""Returns answer
 
 		Returns:
-			int: _description_
+			str: answer
 		"""
 		return self._answer
 
 	def get_word(self) -> str:
-		"""get given word
+		"""Get given word
 
 		Returns:
 			str: word
@@ -58,21 +58,14 @@ class Solution(object):
 		return self._word
 
 	def solve(self) -> None:
-		"""_summary_
+		"""Print Answer
 
-		Args:
-			source (Any): _description_
+		Returns:
+			None
 		"""
-		#self.read_word(source)
-		#print(self.find_answer())
-		#sys.stdout.write('1')
-		#sys.stdout.write("\n")
 		#sys.stdout.write("self._answer: ")
 		sys.stdout.write(self._answer + "\n")
-		#sys.stdout.write('\n'.join(self._answer))
-		#sys.stdout.write("\n")
-		#print(self._answer)
-		#print("\n")
+
 
 if __name__ == "__main__":
         solution = Solution(sys.stdin)
