@@ -1,0 +1,14 @@
+@startuml morse
+scale 2
+title "UML Class Diagram"
+class Morse
+{
+    + word: str
+    + set_word: None
+    + get_word: str
+    + solve: int
+    + get_Solve: int
+    -_str: str
+    -_repr: str
+}
+@enduml

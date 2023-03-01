@@ -51,8 +51,8 @@
 | --- | --- |
 | Description | Unittesting |
 | Due Date | 7-Mar-23 |
-| Status | - |
+| Status | Done |
 | Location | https://github.com/teldrynsero/OOP-cmarcial2/tree/main/unittesting |
-| Self Grade | - |
-| Notes | - |
+| Self Grade | 100/100 |
+| Notes | Completed all requirements |
 
