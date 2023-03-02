@@ -29,6 +29,7 @@ class Morse(object):
 		"""
 		return self.word
 	
+	@property
 	def solve(self) -> int:
 		"""Returns whether the word is a
 		palindrome in morse code or not
