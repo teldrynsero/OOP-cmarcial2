@@ -1,0 +1,14 @@
+@startuml title
+scale 2
+title "UML Class Diagram"
+class Title
+{
+    + name: str
+    + set_name: None
+    + get_name: str
+    + solve: float
+    + get_Solve: float
+    -_str: str
+    -_repr: str
+}
+@enduml
