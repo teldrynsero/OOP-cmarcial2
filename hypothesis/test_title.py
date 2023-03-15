@@ -1,5 +1,7 @@
 import unittest
 from title import Title
+from hypothesis import given
+from hypothesis.strategies import text
 
 class TestTitle(unittest.TestCase):
 	"""
@@ -10,6 +12,13 @@ class TestTitle(unittest.TestCase):
 		
 		"""
 		self.title = Title('ChickenRun 100.42069')
+
+	@given(text())
+	def test_name(self, testName):
+		"""Tests set_name method with HYPOTHESIS
+		"""
+		testName = 'ChickenRun 100.42069'
+		self.assertEqual(self.title.get_name(), testName)
 
 	def test_setName(self) -> None:
 		"""Tests set_name method
@@ -56,6 +65,7 @@ class TestTitle(unittest.TestCase):
 		"""
 		self.title.set_name('SpiritedAway 7.9939')
 		self.assertEqual(str(self.title), '7.9939')
+
 
 if __name__ == '__main__':
 	unittest.main(verbosity=2)

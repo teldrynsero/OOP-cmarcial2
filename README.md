@@ -62,8 +62,8 @@
 | --- | --- |
 | Description | Hypothesis |
 | Due Date | 21-Mar-23 |
-| Status | WIP |
+| Status | Done |
 | Location | https://github.com/teldrynsero/OOP-cmarcial2/tree/main/hypothesis |
-| Self Grade | - |
-| Notes | IN PROGRESS |
+| Self Grade | 100/100 |
+| Notes | Completed all requirements |
 

@@ -5,14 +5,8 @@ import sys
 from main import Solution
 from unittest.mock import patch
 from io import StringIO
-from dataclasses import dataclass
-from hypothesis import given, strategies as st
-
-@dataclass
-class GeneratedData:
-	solve_value: st.SearchStrategy[str]
-	
-generated_data = GeneratedData(solve_value=st.characters())
+from hypothesis import given
+from hypothesis.strategies import text
 
 class TestMain(unittest.TestCase):
 	"""
@@ -25,6 +19,14 @@ class TestMain(unittest.TestCase):
 		data = 'StarWars 50.9'
 		with patch('sys.stdin', StringIO(data)):
 			self.sol = Solution(sys.stdin)
+
+	@given(text())
+	def test_name(self, testName):
+		"""Tests get_name method with HYPOTHESIS
+		"""
+		testName = 'StarWars 50.9'
+		self.assertEqual(self.sol.get_name(), testName)
+
 
 	def test_getName(self) -> None:
 		"""Tests get_name method
