@@ -1,0 +1,14 @@
+@startuml fraction
+scale 2
+title "UML Class Diagram"
+class Fraction
+{
+    + n: str
+    + setN: None
+    + getN: str
+    + solve: str
+    + getSolve: str
+    -_str: str
+    -_repr: str
+}
+@enduml

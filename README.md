@@ -67,3 +67,13 @@
 | Self Grade | 100/100 |
 | Notes | Completed all requirements |
 
+### fractions
+
+| Name | Value |
+| --- | --- |
+| Description | Mixed Fractions |
+| Due Date | 28-Mar-23 |
+| Status | Done |
+| Location | https://github.com/teldrynsero/OOP-cmarcial2/tree/main/fractions |
+| Self Grade | 100/100 |
+| Notes | Completed all requirements |

@@ -1,0 +1,15 @@
+@startuml main
+scale 1
+title  "UML Class Diagram"
+class Solution {
+	.. Instance Variables ..
+	- _data: str 
+	- _answer: str
+	.. Instance Methods ..
+	+ readData(): None
+	+ findAnswer(): None
+	+ getAnswer(): str
+	+ getData(): str
+	+ solve(): None
+}
+@enduml
