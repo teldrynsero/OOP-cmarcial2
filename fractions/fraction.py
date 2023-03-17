@@ -10,7 +10,7 @@ class Fraction(object):
         """Constructor
 
         """
-        self.n = n #fraction
+        self.n = n #fraction to solve
 
     def setN(self, n: str) -> None:
         """Set up n
