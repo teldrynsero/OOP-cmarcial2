@@ -1,0 +1,4 @@
+@startuml interaction
+title "UML Class Interaction"
+Data "1" - Solver: manages >
+@enduml

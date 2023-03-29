@@ -1,0 +1,9 @@
+@startuml main
+scale 2
+title "UML Class Diagram"
+class Solver
+{
+    + solve: List
+    + getSolve: List
+}
+@enduml

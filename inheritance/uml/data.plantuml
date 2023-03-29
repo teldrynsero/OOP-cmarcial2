@@ -1,0 +1,15 @@
+@startuml data
+scale 1
+title  "UML Class Diagram"
+class Data {
+	.. Instance Variables ..
+	+ data: List
+	+ answer: List
+	.. Instance Methods ..
+	+ readData(): None
+	+ getData(): List
+	+ getAnswer(): List
+	+ printAnswer(): None
+	+ printData(): None
+}
+@enduml
