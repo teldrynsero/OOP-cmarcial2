@@ -77,3 +77,14 @@
 | Location | https://github.com/teldrynsero/OOP-cmarcial2/tree/main/fractions |
 | Self Grade | 100/100 |
 | Notes | Completed all requirements |
+
+### inheritance
+
+| Name | Value |
+| --- | --- |
+| Description | Inheritance with Statistics Problem |
+| Due Date | 6-Apr-23 |
+| Status | Done |
+| Location | https://github.com/teldrynsero/OOP-cmarcial2/tree/main/inheritance |
+| Self Grade | 100/100 |
+| Notes | Completed all requirements |

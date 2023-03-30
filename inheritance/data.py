@@ -52,8 +52,3 @@ class Data(object): #read data
             """
             sys.stdout.write('\n'.join(self.answer))
             sys.stdout.write('\n')
-
-        def printData(self) -> None:
-            """Prints data if necessary
-            """
-            print(self.data)

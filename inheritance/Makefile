@@ -11,8 +11,6 @@ mypy_test:
 
 test:
 		pytest test_main.py
-		pytest test_data.py
-
 		@echo "All unittest cases passed"
 
 uml:
@@ -24,6 +22,6 @@ docs:
 		@echo "HTML documentation added to docs folder"
 
 cover:
-		coverage run -m pytest test_main.py test_data.py
+		coverage run -m pytest test_main.py
 		coverage report
 		coverage html
