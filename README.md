@@ -88,3 +88,14 @@
 | Location | https://github.com/teldrynsero/OOP-cmarcial2/tree/main/inheritance |
 | Self Grade | 100/100 |
 | Notes | Completed all requirements |
+
+### abstract
+
+| Name | Value |
+| --- | --- |
+| Description | Overloading with Stacking Cups Problem |
+| Due Date | 14-Apr-23 |
+| Status | Done |
+| Location | https://github.com/teldrynsero/OOP-cmarcial2/tree/main/abstract |
+| Self Grade | 100/100 |
+| Notes | Completed all requirements |

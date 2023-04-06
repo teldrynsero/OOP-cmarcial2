@@ -1,0 +1,17 @@
+@startuml cup
+scale 1
+title  "UML Class Diagram"
+class Cup {
+	.. Instance Variables ..
+	- _n: int
+	- _cup: List
+	.. Instance Methods ..
+	+ set_values(): None
+	+ getN(): int
+	+ getData(): List
+	+ solve(): str
+	+ getSolve(): str
+    - str(): str
+    - repr(): str
+}
+@enduml

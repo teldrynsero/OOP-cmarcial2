@@ -1,0 +1,16 @@
+@startuml main
+scale 1
+title  "UML Class Diagram"
+class Solution {
+	.. Instance Variables ..
+	- _cupNumber: int 
+    - -data: List
+	- _answer: List
+	.. Instance Methods ..
+	+ read_input(): None
+	+ data(): List
+	+ answer(): str
+	+ solve(): None
+	+ print_answer(): None
+}
+@enduml

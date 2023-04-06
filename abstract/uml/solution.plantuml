@@ -1,0 +1,4 @@
+@startuml interaction
+title "UML Class Interaction"
+Solution "1" - Cup: manages >
+@enduml
